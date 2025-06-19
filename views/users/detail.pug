@@ -1,0 +1,12 @@
+doctype html
+html
+  head
+    title= `${user.username}'s Profile`
+    link(rel='stylesheet', href='/style.css')
+  body
+    .user-profile
+      h1= user.username
+      p Email: #{user.email || 'Not provided'}
+
+      if isAdmin
+        a(href=`/users/${user.username}/edit`).btn Edit Profile

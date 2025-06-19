@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>User Portal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Sing up</h1>
+
+  <form id="registerForm">
+    <h2>Registration</h2>
+    <input id="rUser" placeholder="Name" required />
+    <input id="rPass" placeholder="Password" type="password" required />
+    <input id="rRole" placeholder="Are you a user or an admin?" required />
+    <button>Sign up</button>
+  </form>
+
+  <form id="loginForm">
+    <h2>Log in</h2>
+    <input id="lUser" placeholder="Name" required />
+    <input id="lPass" placeholder="Password" type="password" required />
+    <p id="loginError" class="error"></p>
+    <button>Log in</button>
+  </form>
+
+  <p id="message"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>

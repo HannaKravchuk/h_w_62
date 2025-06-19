@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Articles</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <h1>Articles List</h1>
+  <ul>
+    <% articles.forEach(article => { %>
+      <li><a href="/articles/<%= article.id %>"><%= article.title %></a></li>
+    <% }) %>
+  </ul>
+</body>
+</html>

@@ -1,0 +1,10 @@
+doctype html
+html
+  head
+    title Users List
+  body
+    h1 All Users
+    ul
+      each user in users
+        li
+          a(href=`/users/${user.username}`) #{user.username}
